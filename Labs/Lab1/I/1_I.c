@@ -21,6 +21,8 @@ int main(int argc, char * argv[]){
 		}
 	}
 
+	printf("tamanho da string é: %d", str_length);
+
 	result_str = (char*)malloc(str_length*sizeof(char) + 1);
 
 	for(i=1;i<argc; i++){
@@ -29,7 +31,8 @@ int main(int argc, char * argv[]){
 			c++;
 		}
 	}
-	free(result_str);
+
 	printf("\n%s\n", result_str);
+	/*free(result_str);*/
 	exit(0);
 }
