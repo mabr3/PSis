@@ -1,0 +1,25 @@
+The addresses of a and b are so different because a is global variable and b is
+a local variable to the main.
+
+name  |    value            |   type                |   Segment/Location
+  a   |                     |   int                 |
+  &a  |   0x60104c          |   pointer             |
+  b   |                     |   int                 |
+  &b  |                     |   pointer             |
+  v   |   0x7fffffffdcc0    |   char[]              |
+  &v  |   0x7fffffffdcc0    |   pointer             |
+  p   |   0x602010          |   pointer             |
+  &p  |   0x7fffffffdcb8    |   pointer (to pointer)|
+  *p  |                     |   char                |
+main  |                     |                       |
+&main |                     |                       |
+exit  |                     |                       |
+&exit |   0x4004a0          |                       |
+
+
+
+
+
+
+N: void * -ponteiro genérico, pode ser para qualquer tipo
+  <malloc.h> -> void * malloc(size_t n_Bytes)
