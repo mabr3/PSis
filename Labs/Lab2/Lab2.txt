@@ -1,0 +1,56 @@
+Lab2 PSIS
+
+compilation:
+-g -> debugging info
+-O0 -> No optimization
+--
+I:
+
+for(...;...; i++)-> Era i+1, mas tem de ser dito a que se atribui esse valor
+
+Função random() na biblioteca, mas tem de ser declarada antes, porque não é
+uma função standard de C.
+
+II:
+toupper() -> converte em maiúsculas (include <ctype.h>)
+
+endereço 0x0 inválido!
+
+Problema: Não tinha memória alocada para o v2.(Declarei como v2[100], visto que v1[100])
+->Seria melhor com malloc! ->Done.
+
+III:
+Valgrind:
+-v -> more verbose, show misc info.
+
+1o erro -> free do v2
+2o erro -> acrescentar +1 na aloação de memória para o '\0'
+3o erro -> acrescentar caracter terminador no fim da string '\0'
+
+IV:
+(prob mesmo erro do 3o anterior)
+yup
+
+V:
+
+VI:
+
+wc - Word Count:
+
+Print newline, word, and byte counts for each FILE, and a total line if
+more than one FILE is specified.  A word is a non-zero-length  sequence
+of characters delimited by white space.
+
+With no FILE, or when FILE is -, read standard input.
+
+grep:
+Print newline, word, and byte counts for each FILE, and a total line if
+more than one FILE is specified.  A word is a non-zero-length  sequence
+of characters delimited by white space.
+
+With no FILE, or when FILE is -, read standard input.
+
+ps:
+ps displays information about a selection of the active processes.  If
+you want a repetitive update of the selection and the displayed
+information, use top(1) instead.
